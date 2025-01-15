@@ -39,10 +39,7 @@ export const App = () => {
             </Typography.Text>
           </div>
         </div>
-      </div>
-
-      <div className={appSt.containerBottom}>
-        <Typography.Text view="primary-medium" color="secondary">
+        <Typography.Text view="primary-medium" color="secondary" style={{ textAlign: 'right' }}>
           Примеры вопросов:
         </Typography.Text>
         <div className={appSt.chat({ position: 'right' })}>
@@ -63,6 +60,7 @@ export const App = () => {
           </div>
         </div>
       </div>
+
       <Gap size={96} />
 
       <div className={appSt.bottomBtn}>
@@ -91,7 +89,10 @@ export const App = () => {
       >
         <div className={appSt.containerBottom}>
           <Typography.Text view="primary-medium" weight="medium">
-            В чат-боте задействованы нейронные сети (генеративный искусственный интеллект). Продолжая, вы соглашаетесь:
+            Информация, предоставленная ии-ассистентом, не является индивидуальной инвестиционной рекомендацией. Предложенные
+            финансовые инструменты и операции могут не соответствовать вашему профилю и целям (ожиданиям).
+            <br />
+            Продолжая, вы соглашаетесь:
           </Typography.Text>
           <List tag="ol" colorMarker="tertiary">
             <List.Item>
@@ -106,11 +107,6 @@ export const App = () => {
             <List.Item>
               Не использовать ии-ассистента для нарушения нормативных актов, норм морали и нравственности, введения в
               заблуждение либо распространения недостоверной информации.
-            </List.Item>
-            <List.Item>
-              Информация, предоставленная ии-ассистентом, не является индивидуальной инвестиционной рекомендацией, и
-              финансовые инструменты либо операции, упомянутые в ней, могут не соответствовать Вашему инвестиционному профилю
-              и инвестиционным целям (ожиданиям)»
             </List.Item>
           </List>
         </div>
