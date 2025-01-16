@@ -1,7 +1,6 @@
 import { BottomSheet } from '@alfalab/core-components/bottom-sheet';
 import { ButtonMobile } from '@alfalab/core-components/button/mobile';
 import { Gap } from '@alfalab/core-components/gap';
-import { List } from '@alfalab/core-components/list';
 import { Typography } from '@alfalab/core-components/typography';
 import { useState } from 'react';
 import robotImg from './assets/robot.png';
@@ -91,24 +90,7 @@ export const App = () => {
           <Typography.Text view="primary-medium" weight="medium">
             Информация, предоставленная ии-ассистентом, не является индивидуальной инвестиционной рекомендацией. Предложенные
             финансовые инструменты и операции могут не соответствовать вашему профилю и целям (ожиданиям).
-            <br />
-            Продолжая, вы соглашаетесь:
           </Typography.Text>
-          <List tag="ol" colorMarker="tertiary">
-            <List.Item>
-              Не размещать, не загружать и не раскрывать каким-либо образом конфиденциальную информацию, включая банковские
-              сведения и персональные данные (ФИО, номер карты, номер телефона и др.);
-            </List.Item>
-            <List.Item>
-              Не указывать где-либо без согласия Банка, что ответы получены от Банка или являются его позицией;
-            </List.Item>
-            <List.Item>Полученные ответы адаптировать под свои нужды;</List.Item>
-            <List.Item>Проверять информацию в других источниках из-за возможных ошибок искусственного интеллекта;</List.Item>
-            <List.Item>
-              Не использовать ии-ассистента для нарушения нормативных актов, норм морали и нравственности, введения в
-              заблуждение либо распространения недостоверной информации.
-            </List.Item>
-          </List>
         </div>
       </BottomSheet>
     </>
